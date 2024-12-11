@@ -9,16 +9,12 @@
     
 // }
 
-document.getElementById('navbar-toggle').addEventListener('click', function() {
-    const links = document.getElementById('navbar-links');
-    links.classList.toggle('active'); // Toggle the active class for the mobile menu
-});
 
 
 const sr = ScrollReveal ({
     distance : '45px',
     duration : 2700,
-    reset : true,
+    reset : false,
   })
 
 sr.reveal('.photo',{ delay:350, origin:'left' })
@@ -37,7 +33,7 @@ sr.reveal('.photo',{ delay:350, origin:'left' })
 //   sr.reveal('.footer-logo',{ delay:350, origin:'bottom' })
 sr.reveal('.mapp',{ delay:350, origin:'left' })
  sr.reveal('.cont',{ delay:350, origin:'right' })
-
+sr.reveal('.photoo',{ delay:350, origin:'right' })
 
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
