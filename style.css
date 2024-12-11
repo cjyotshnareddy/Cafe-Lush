@@ -246,6 +246,7 @@ ul{
         order: -1; 
         text-align: center; 
         padding: 10px; 
+        height: 500px;
     }
 
     .abtpara {
@@ -255,8 +256,60 @@ ul{
     .aboutt {
         font-size: 20px; 
     }
+    .photo{
+        padding-top: 150px;
+        padding-left: 0px;
+    }
 }
 
+@media  screen and (max-width:768px) {
+    #about{
+        display: none;
+    }
+    
+}
+/* About Us Section hidden by default */
+.about-us-mobile {
+    display: none;
+    padding: 20px;
+    background-color: black; 
+    text-align: center;
+}
+
+
+.about-us-mobile .about-content {
+    margin-bottom: 20px;
+}
+
+.about-us-mobile h1 {
+    font-size: 26px;
+    color: white;
+    margin: 10px 0;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.about-us-mobile p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.8;
+    margin: 0 10px;
+    font-family: sans-serif;
+}
+
+/* Style the image */
+.about-us-mobile .photoo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Show the About Us section only on mobile screens */
+@media (max-width: 768px) {
+    .about-us-mobile {
+        display: block; 
+    }
+}
 
 
    .our-menu-food{
@@ -368,6 +421,11 @@ ul{
 .mapp{
     padding-left: 200px;
 }
+@media screen and (max-width: 768px){
+    .cont{
+        padding-left: 20px;
+    }
+}
 @media (max-width: 768px) {
     .mapp {
         padding-left: 20px;
@@ -376,6 +434,7 @@ ul{
     
     .contact .map {
         height: 250px;
+        padding-left: 30px;
     }
     .footer{
         padding-left: 0px;
@@ -460,6 +519,7 @@ foot{
 .footerBottom p{
     color: white;
 }
+
 .designer{
     opacity: 0.7;
     text-transform: uppercase;
