@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <!-- <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script> -->
+    <title>Document</title>
+   
+    
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="logo">
+            <h1>Café Lush</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menuu">Menu</a></li>
+            <li><a href="#cart-section">Cart</a></li>
+            <li><a href="#contactt">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+ 
+
+
+  </ul>
+</nav>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+    <div id="outer">
+        <div id="inner">
+        <h1>CAFE LUSH</h1>
+        </div>
+    </div>
+   
+  
+<!-- <h1 id="heading">ABOUT US</h1> -->
+<section id="about">
+  
+        <div class="photo">
+        <img height="300px"   src="images/Group-of-happy-chefs-smiling-at-the-camera-1400- (1).jpeg"/>
+        <img class="pic" src="images/Group-of-happy-chefs-smiling-at-the-camera-1400- (1).jpeg">
+    </div>
+        <div id="para">
+            <h1 class="aboutt">ABOUT US</h1>
+            <h3 class="abtpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eum quasi necessitatibus ipsa dolorum consequuntur voluptates distinctio consectetur? Molestias id, quae distinctio quibusdam officiis ipsam accusantium tempora error repellat cum!
+        Doloribus provident obcaecati deleniti blanditiis cumque delectus reprehenderit recusandae quia praesentium in incidunt quibusdam, placeat laborum deserunt accusamus accusantium ullam natus assumenda dolor. Repellat, veniam ipsa. Tenetur explicabo delectus suscipit!
+        Quasi ad saepe assumenda rerum possimus, mollitia labore beatae odio consequatur asperiores dolores modi delectus, qui recusandae consectetur? Libero hic dicta pariatur ab ipsa voluptatibus quia culpa? Tempora, quia consequuntur.
+            </h3>
+   
+    </div>
+</section>
+
+
+  <div id="menuu"  class="our-menu-food">
+    <h1 >Our Menu</h1>
+
+    <div class="main-menu-food">
+        <div class="inner-menu-food">
+            <div class="menu-food-content">
+                <img  src="images/oreo.jpg" alt="">
+
+                <div class="menu-food-text">
+                    <h2>Oreo milkshake</h2>
+                    <p> quos animi iusto architecto aliquam dignissimos, molestiae tempora doloremque dolores repellendus! Ab, est voluptatem.</p>
+                    <p> <span>Price Rs.60</span> </p>
+                    <button class="add-to-cart" data-name="Oreo Milkshake" data-price="60">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner-menu-food">
+            <div class="menu-food-content">
+                <img src="images/cookies.webp" alt="">
+
+                <div class="menu-food-text">
+                    <h2>Cookies</h2>
+                    <p> quos animi iusto architecto aliquam dignissimos, molestiae tempora doloremque dolores repellendus! Ab, est voluptatem.</p>
+                    <p> <span>Price Rs.40</span> </p>
+                    <button class="add-to-cart" data-name="Cookies" data-price="40">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="inner-menu-food">
+          <div class="menu-food-content">
+              <img src="images/sand.jpg" alt="">
+
+              <div class="menu-food-text">
+                  <h2>Sandwich</h2>
+                  <p> quos animi iusto architecto aliquam dignissimos, molestiae tempora doloremque dolores repellendus! Ab, est voluptatem.</p>
+                  <p> <span>Price Rs. 45</span> </p>
+                  <button class="add-to-cart" data-name="Sandwich" data-price="45">Add to Cart</button>
+              </div>
+          </div>
+      </div>
+      <div class="inner-menu-food">
+        <div class="menu-food-content">
+            <img src="images/hot choco.webp" alt="">
+
+            <div class="menu-food-text">
+                <h2>Hot Chocolate</h2>
+                <p> quos animi iusto architecto aliquam dignissimos, molestiae tempora doloremque dolores repellendus! Ab, est voluptatem.</p>
+                <p> <span>Price Rs. 60</span> </p>
+                <button class="add-to-cart" data-name="Oreo Milkshake" data-price="60">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="inner-menu-food">
+      <div class="menu-food-content">
+          <img src="images/WalnutBrownie.jpg" alt="">
+
+          <div class="menu-food-text">
+              <h2>Walnut Brownie</h2>
+              <p> quos animi iusto architecto aliquam dignissimos, molestiae tempora doloremque dolores repellendus! Ab, est voluptatem.</p>
+              <p> <span>Price Rs. 70</span> </p>
+              <button class="add-to-cart" data-name="Walnut Brownie" data-price="70">Add to Cart</button>
+          </div>
+      </div>
+  </div>
+   <div class="inner-menu-food">
+          <div class="menu-food-content">
+              <img src="images/Red-velvet-cupcakes-10-1200-500x500.webp" alt="">
+
+              <div class="menu-food-text">
+                  <h2>cupcake</h2>
+                  <p> quos animi iusto architecto aliquam dignissimos, molestiae tempora doloremque dolores repellendus! Ab, est voluptatem.</p>
+                  <p> <span>Price Rs. 50</span> </p>
+                  <button class="add-to-cart" data-name="Cupcake" data-price="50">Add to Cart</button>
+              </div>
+          </div>
+      </div>
+      <div class="inner-menu-food">
+        <div class="menu-food-content">
+            <img src="images/coffeee.jpg" alt="">
+
+            <div class="menu-food-text">
+                <h2>Coffee</h2>
+                <p> quos animi iusto architecto aliquam dignissimos, molestiae tempora doloremque dolores repellendus! Ab, est voluptatem.</p>
+                <p> <span>Price Rs. 40</span> </p>
+                <button class="add-to-cart" data-name="Coffee" data-price="40">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="inner-menu-food">
+            <div class="menu-food-content">
+                <img src="images/ff.webp" alt="">
+
+                <div class="menu-food-text">
+                    <h2>French Fries</h2>
+                    <p>quos animi iusto architecto aliquam dignissimos, molestiae tempora doloremque dolores repellendus! Ab, est voluptatem.</p>
+                    <p> <span>Price Rs. 60</span> </p>
+                    <button class="add-to-cart" data-name="french fries" data-price="60">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Cart Section -->
+<section id="cart-section">
+  <h1>Your Cart</h1>
+  <div id="cart-container"></div>
+  
+  <div id="cart-total">
+      <h2>Total: Rs.<span id="cart-total-price">0</span></h2>
+  </div>
+  <button id="checkout-btn">Checkout</button>
+</section>
+
+<section class="contact" id="contact">
+   <h1 class="heading"><span>Contact</span> Us</h1>
+   <div class="row">
+    <div class="mapp">
+    <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.0281020071384!2d76.6148389!3d12.313894399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7b5e8a8e1f25%3A0x3d47264d19602571!2sLara&#39;s%20Cafe!5e0!3m2!1sen!2sin!4v1716055592502!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+ 
+   <div  id="contactt" class="cont">
+    <div class="footer">
+      <!-- <h1>Contact us</h1> -->
+      <p>Email: abc@gmail.com</p><br/>
+      <p>Phone:123 456 789</p><br/>
+      <p>Address: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis itaque ducimus nesciunt sequi distinctio ut id officiis nostrum odit excepturi dolor quibusdam perferendis eos, veniam accusantium illo pariatur? Numquam.</p>
+    </div>
+</div>
+   
+   </div>
+   <foot>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+       
+        
+    </div>
+    
+</foot>
+<footer>
+  <p>&copy; 2024 Lara's Cafe. All Rights Reserved.</p>
+</footer>
+   
+
+
+
+
+
+</section>
+<!-- scroll reveal javascript link -->
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- javascript link  -->
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

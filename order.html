@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Order Checkout</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html" id="logo">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="checkout">
+        <div class="checkout-container">
+            <h1>Checkout</h1>
+
+            <!-- Customer Details Section -->
+            <div class="customer-details">
+                <h2>Billing Information</h2>
+                <form id="checkout-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="address">Shipping Address:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <label for="postal-code">Postal Code:</label>
+                    <input type="text" id="postal-code" name="postal-code" required>
+                </form>
+            </div>
+
+            <!-- Order Summary Section -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div id="order-items">
+                    
+                </div>
+
+                <div class="order-total">
+                    <h3>Total Price: <span id="total-price">Rs. 0</span></h3>
+                </div>
+            </div>
+
+            <!-- Payment Section -->
+            <div class="payment-section">
+                <h2>Payment Method</h2>
+                <label for="payment-method">Choose your payment method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="cod">Cash on Delivery</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="upi">UPI</option>
+                   
+                </select>
+
+                <!-- Place Order Button -->
+                <button id="place-order-btn">Place Order</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lara's Cafe. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to dynamically populate cart details and calculate total -->
+    <script>
+       
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        const orderItemsContainer = document.getElementById('order-items');
+        const totalPriceElement = document.getElementById('total-price');
+        let totalPrice = 0;
+
+        
+        function renderCart() {
+            orderItemsContainer.innerHTML = ''; 
+            totalPrice = 0; 
+
+            cart.forEach((item, index) => {
+              
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('order-item');
+                itemElement.innerHTML = `
+                    <p>${item.name}: Rs. ${item.price} x ${item.quantity}</p>
+                    <button class="remove-item" data-index="${index}">Remove</button>
+                `;
+                orderItemsContainer.appendChild(itemElement);
+
+               
+                totalPrice += item.price * item.quantity;
+            });
+
+           
+            totalPriceElement.textContent = `Rs. ${totalPrice}`;
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1); 
+            localStorage.setItem('cart', JSON.stringify(cart)); 
+            renderCart(); 
+        }
+
+        
+        orderItemsContainer.addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-item')) {
+                const index = e.target.getAttribute('data-index');
+                removeFromCart(index);
+            }
+        });
+
+        renderCart();
+
+        
+        document.getElementById('place-order-btn').addEventListener('click', function() {
+           // alert('Order placed successfully!');
+          
+            localStorage.removeItem('cart'); 
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+ 
+    const paymentMethodSelect = document.getElementById('payment-method');
+
+    
+    paymentMethodSelect.addEventListener('change', function () {
+        const selectedMethod = paymentMethodSelect.value;
+
+        if (selectedMethod === 'credit-card' || selectedMethod === 'debit-card' || selectedMethod === 'upi') {
+            alert("Sorry, we cannot accept online payments at the moment. Please choose 'Cash on Delivery'.");
+            paymentMethodSelect.value = 'cod'; 
+        }
+    });
+});
+
+ 
+document.getElementById('place-order-btn').addEventListener('click', function() {
+  
+    const checkoutContainer = document.querySelector('.checkout-container');
+    checkoutContainer.innerHTML = `
+        <div class="confirmation-message">
+            <h1>Order Confirmation</h1>
+            <p>Thank you, your order has been placed successfully!</p>
+            <p>Your order will be delivered to the provided address.</p>
+            <p>Total amount: <strong>Rs. ${totalPrice}</strong></p>
+        </div>
+    `;
+
+ 
+    localStorage.removeItem('cart');
+});
+
+
+    </script>
+</body>
+</html>
