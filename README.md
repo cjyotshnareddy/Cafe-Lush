@@ -15,7 +15,7 @@ Welcome to Cafe Lush! This is a cozy little corner of the internet where you can
 - HTML5
 - CSS3
 - JavaScript
-- FontAwesome for Icons
+- FontAwesome for Icons 
 
 
 ## License 📄
