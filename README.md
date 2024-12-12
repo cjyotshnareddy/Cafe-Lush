@@ -12,7 +12,7 @@ Welcome to Cafe Lush! This is a cozy little corner of the internet where you can
 
 ## Tech Stack 🛠️ 
 
-- HTML5
+- HTML5 
 - CSS3
 - JavaScript 
 - FontAwesome for Icons 
