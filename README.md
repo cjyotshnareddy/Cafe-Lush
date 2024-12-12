@@ -4,7 +4,7 @@ Welcome to Cafe Lush! This is a cozy little corner of the internet where you can
  
 ## Features ✨
   
-- **Responsive Design** 📱💻: Enjoy browsing on any device—whether you're on mobile or desktop, the site looks great everywhere!
+- **Responsive Design** 📱💻: Enjoy browsing on any device—whether you're on mobile or desktop, the site looks great everywhere! 
 - **Menu** 🍪: Explore our menu with tempting items like Oreo Milkshake, Sandwiches, Cupcakes, and more! 
 - **Cart & Checkout** 🛒: Add items to your cart and proceed to checkout with ease. Enter your details, review your order, and select your preferred payment method.
 - **Order Summary** 📑: Review your order before placing it, and keep track of the total price.
