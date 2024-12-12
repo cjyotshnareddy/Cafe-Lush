@@ -1,7 +1,7 @@
 # Cafe-Lush 🍃🍰
 
 Welcome to Cafe Lush! This is a cozy little corner of the internet where you can explore our delicious menu, add your favorites to the cart, and enjoy a seamless ordering experience! Whether you're  craving a warm cup of coffee or a sweet cupcake, we've got you covered. 😋  
- 
+  
 ## Features ✨       
     
 - **Responsive Design** 📱💻: Enjoy browsing on any device—whether you're on mobile or desktop, the site looks great everywhere!     
