@@ -10,7 +10,7 @@ Welcome to Cafe Lush! This is a cozy little corner of the internet where you can
 - **Order Summary** 📑: Review your order before placing it, and keep track of the total price.
 - **Contact Us** 📍: Find us on the map, and reach out through our contact section. We love hearing from you!
 
-## Tech Stack 🛠️
+## Tech Stack 🛠️ 
 
 - HTML5
 - CSS3
