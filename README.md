@@ -8,7 +8,7 @@ Welcome to Cafe Lush! This is a cozy little corner of the internet where you can
 - **Menu** 🍪: Explore our menu with tempting items like Oreo Milkshake, Sandwiches, Cupcakes, and more! 
 - **Cart & Checkout** 🛒: Add items to your cart and proceed to checkout with ease. Enter your details, review your order, and select your preferred payment method.
 - **Order Summary** 📑: Review your order before placing it, and keep track of the total price.
-- **Contact Us** 📍: Find us on the map, and reach out through our contact section. We love hearing from you!
+- **Contact Us** 📍: Find us on the map, and reach out through our contact section. We love hearing from you! 
 
 ## Tech Stack 🛠️ 
 
